@@ -29,14 +29,15 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
+#  s.resources    = 'YSHTZImagePickerController/Assets/*.{png,bundle}'
   s.source_files = 'YSHTZImagePickerController/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'YSHTZImagePickerController' => ['YSHTZImagePickerController/Assets/*.png']
-  # }
+   s.resource_bundles = {
+       'YSHTZImagePickerController' => ['YSHTZImagePickerController/Assets/*.{png,bundle}']
+     
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.frameworks   = "Photos"
   # s.dependency 'AFNetworking', '~> 2.3'
 end

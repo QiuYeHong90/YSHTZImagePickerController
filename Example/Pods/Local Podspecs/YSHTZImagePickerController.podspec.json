@@ -1,0 +1,28 @@
+{
+  "name": "YSHTZImagePickerController",
+  "version": "0.1.0",
+  "summary": "A short description of YSHTZImagePickerController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/793983383@qq.com/YSHTZImagePickerController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "793983383@qq.com": "793983383@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/793983383@qq.com/YSHTZImagePickerController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "YSHTZImagePickerController/Classes/**/*",
+  "resource_bundles": {
+    "YSHTZImagePickerController": [
+      "YSHTZImagePickerController/Assets/*.{png,bundle}"
+    ]
+  },
+  "frameworks": "Photos"
+}

@@ -1,0 +1,6 @@
+framework module Pods_YSHTZImagePickerController_Tests {
+  umbrella header "Pods-YSHTZImagePickerController_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
