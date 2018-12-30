@@ -191,11 +191,11 @@ static CGFloat itemMargin = 5;
 - (void)configBottomToolBar {
     TZImagePickerController *tzImagePickerVc = (TZImagePickerController *)self.navigationController;
     if (!tzImagePickerVc.showSelectBtn) return;
-
+    
     _bottomToolBar = [[UIView alloc] initWithFrame:CGRectZero];
     CGFloat rgb = 253 / 255.0;
     _bottomToolBar.backgroundColor = [UIColor colorWithRed:rgb green:rgb blue:rgb alpha:1.0];
-
+    
     _previewButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_previewButton addTarget:self action:@selector(previewButtonClick) forControlEvents:UIControlEventTouchUpInside];
     _previewButton.titleLabel.font = [UIFont systemFontOfSize:16];
@@ -273,7 +273,7 @@ static CGFloat itemMargin = 5;
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
-
+    
     TZImagePickerController *tzImagePickerVc = (TZImagePickerController *)self.navigationController;
     
     CGFloat top = 0;
@@ -308,7 +308,7 @@ static CGFloat itemMargin = 5;
     }
     _bottomToolBar.frame = CGRectMake(0, toolBarTop, self.view.tz_width, toolBarHeight);
     
-    CGFloat previewWidth = [tzImagePickerVc.previewBtnTitleStr boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX) options:NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16]} context:nil].size.width + 2;    
+    CGFloat previewWidth = [tzImagePickerVc.previewBtnTitleStr boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX) options:NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16]} context:nil].size.width + 2;
     if (!tzImagePickerVc.allowPreview) {
         previewWidth = 0.0;
     }
@@ -544,7 +544,7 @@ static CGFloat itemMargin = 5;
             // 2. select:check if over the maxImagesCount / 选择照片,检查是否超过了最大个数的限制
             if (tzImagePickerVc.selectedModels.count < tzImagePickerVc.maxImagesCount) {
                 if (tzImagePickerVc.maxImagesCount == 1 && !tzImagePickerVc.allowPreview) {
-                   
+                    
                     TZImagePickerController * nav = ( TZImagePickerController *)self.navigationController;
                     if (nav.ratio != TOCropViewControllerAspectRatioNone) {
                         
@@ -621,13 +621,21 @@ static CGFloat itemMargin = 5;
         }
     } else {
         
-        
-        
+        TZImagePickerController *imagePickerVc = (TZImagePickerController *)self.navigationController;
+        if (imagePickerVc.isCustomPush) {
+            if (imagePickerVc.customCallBlock) {
+                imagePickerVc.customCallBlock(_models[index]);
+            }
+            
+        }else{
             TZPhotoPreviewController *photoPreviewVc = [[TZPhotoPreviewController alloc] init];
             photoPreviewVc.currentIndex = index;
             photoPreviewVc.models = _models;
             [self pushPhotoPrevireViewController:photoPreviewVc];
-       
+        }
+        
+        
+        
         
     }
 }

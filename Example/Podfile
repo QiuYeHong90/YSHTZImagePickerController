@@ -4,7 +4,7 @@ platform :ios, '8.0'
 
 target 'YSHTZImagePickerController_Example' do
   pod 'YSHTZImagePickerController', :path => '../'
-
+#  pod 'PLShortVideoKit',:git=>'git@github.com:pili-engineering/PLShortVideoKit.git'
   target 'YSHTZImagePickerController_Tests' do
     inherit! :search_paths
 

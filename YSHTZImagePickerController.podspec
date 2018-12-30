@@ -34,10 +34,12 @@ TODO: Add long description of the pod here.
   
    s.resource_bundles = {
        'YSHTZImagePickerController' => ['YSHTZImagePickerController/Assets/*.{png,bundle}']
-     
+       
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks   = "Photos"
-  # s.dependency 'AFNetworking', '~> 2.3'
+  
+   s.requires_arc = true
+
 end

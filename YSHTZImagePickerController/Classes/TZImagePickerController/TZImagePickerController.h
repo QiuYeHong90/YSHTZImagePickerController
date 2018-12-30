@@ -82,6 +82,12 @@ typedef void (^fininshcapture)(UIImage *image);
 /// Default is YES, if set NO, user can't picking video.
 /// 默认为YES，如果设置为NO,用户将不能选择视频
 @property (nonatomic, assign) BOOL allowPickingVideo;
+
+/**
+ 是否自定义加页面
+ */
+@property (nonatomic, assign) BOOL isCustomPush;
+@property (nonatomic, copy) void (^customCallBlock)(id obj);
 /// Default is NO / 默认为NO，为YES时可以多选视频/gif/图片，和照片共享最大可选张数maxImagesCount的限制
 @property (nonatomic, assign) BOOL allowPickingMultipleVideo;
 

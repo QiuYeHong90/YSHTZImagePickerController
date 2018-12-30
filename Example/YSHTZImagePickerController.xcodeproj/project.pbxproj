@@ -22,6 +22,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		70E633F921D7404700A7A662 /* ToolAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E633F821D7404700A7A662 /* ToolAlert.m */; };
+		70E633FB21D75E4F00A7A662 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E633FA21D75E4F00A7A662 /* VideoToolbox.framework */; };
+		70E633FD21D75E5D00A7A662 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E633FC21D75E5D00A7A662 /* Accelerate.framework */; };
+		70E633FF21D75E6B00A7A662 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E633FE21D75E6B00A7A662 /* AVFoundation.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		AE77EAFED5CB78F3EE57B3CB /* Pods_YSHTZImagePickerController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBFECE2023D87C0F69E2F07 /* Pods_YSHTZImagePickerController_Example.framework */; };
@@ -61,12 +64,15 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		70E633F721D7404700A7A662 /* ToolAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolAlert.h; sourceTree = "<group>"; };
 		70E633F821D7404700A7A662 /* ToolAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolAlert.m; sourceTree = "<group>"; };
+		70E633FA21D75E4F00A7A662 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		70E633FC21D75E5D00A7A662 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		70E633FE21D75E6B00A7A662 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7174E02673BF1EA7BDFCF1EE /* Pods-YSHTZImagePickerController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSHTZImagePickerController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YSHTZImagePickerController_Example/Pods-YSHTZImagePickerController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7A0490EEC5AE6A66D6C53CFF /* Pods-YSHTZImagePickerController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSHTZImagePickerController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YSHTZImagePickerController_Tests/Pods-YSHTZImagePickerController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9812296ABAAB60BFE3DD3B93 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A30F2B3B57E5AF69DF19307C /* YSHTZImagePickerController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YSHTZImagePickerController.podspec; path = ../YSHTZImagePickerController.podspec; sourceTree = "<group>"; };
+		A30F2B3B57E5AF69DF19307C /* YSHTZImagePickerController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YSHTZImagePickerController.podspec; path = ../YSHTZImagePickerController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA48BFD88C2AE7CEC2D89912 /* Pods-YSHTZImagePickerController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSHTZImagePickerController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YSHTZImagePickerController_Tests/Pods-YSHTZImagePickerController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AEBFECE2023D87C0F69E2F07 /* Pods_YSHTZImagePickerController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YSHTZImagePickerController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45FDF73A85BF5531D8200D9 /* Pods_YSHTZImagePickerController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YSHTZImagePickerController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E633FF21D75E6B00A7A662 /* AVFoundation.framework in Frameworks */,
+				70E633FD21D75E5D00A7A662 /* Accelerate.framework in Frameworks */,
+				70E633FB21D75E4F00A7A662 /* VideoToolbox.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -122,6 +131,9 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				70E633FE21D75E6B00A7A662 /* AVFoundation.framework */,
+				70E633FC21D75E5D00A7A662 /* Accelerate.framework */,
+				70E633FA21D75E4F00A7A662 /* VideoToolbox.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,

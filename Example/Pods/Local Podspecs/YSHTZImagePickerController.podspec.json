@@ -12,7 +12,7 @@
     "793983383@qq.com": "793983383@qq.com"
   },
   "source": {
-    "git": "https://github.com/793983383@qq.com/YSHTZImagePickerController.git",
+    "git": "git@github.com:QiuYeHong90/YSHTZImagePickerController.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -24,5 +24,6 @@
       "YSHTZImagePickerController/Assets/*.{png,bundle}"
     ]
   },
-  "frameworks": "Photos"
+  "frameworks": "Photos",
+  "requires_arc": true
 }
