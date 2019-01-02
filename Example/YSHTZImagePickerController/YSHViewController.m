@@ -160,10 +160,11 @@
     // 3. 设置是否可以选择视频/图片/原图
     imagePickerVc.ratio = TOCropViewControllerAspectRatioNone;
     if (self.isVideo) {
+        imagePickerVc.numOneSeletedStyle = 1 ;
+        imagePickerVc.allowPreview = NO ;
         imagePickerVc.allowPickingVideo = YES;
         imagePickerVc.allowPickingImage = NO;
-        imagePickerVc.allowPreview = YES;
-        
+        imagePickerVc.isCustomPush = NO;
     }else{
         imagePickerVc.allowPickingVideo = NO;
         imagePickerVc.allowPickingImage = YES;
@@ -172,7 +173,7 @@
     
     imagePickerVc.allowPickingOriginalPhoto = NO;
     imagePickerVc.allowPickingGif = YES;
-    imagePickerVc.allowPickingMultipleVideo =NO; // 是否可以多选视频
+    imagePickerVc.allowPickingMultipleVideo =YES; // 是否可以多选视频
     
     // 4. 照片排列按修改时间升序
     imagePickerVc.sortAscendingByModificationDate = YES;
@@ -185,7 +186,7 @@
     
     /// 5. Single selection mode, valid when maxImagesCount = 1
     /// 5. 单选模式,maxImagesCount为1时才生效
-    imagePickerVc.showSelectBtn = NO;
+    imagePickerVc.showSelectBtn = YES;
     imagePickerVc.allowCrop = NO;
     imagePickerVc.needCircleCrop = NO;
     // 设置竖屏下的裁剪尺寸
@@ -210,7 +211,7 @@
      }];
      imagePickerVc.delegate = self;
      */
-    
+    imagePickerVc.allowPickingMultipleVideo =YES;
     imagePickerVc.isStatusBarDefault = NO;
 #pragma mark - 到这里为止
     

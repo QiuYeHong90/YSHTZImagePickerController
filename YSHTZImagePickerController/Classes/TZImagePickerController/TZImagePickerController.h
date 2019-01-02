@@ -87,7 +87,12 @@ typedef void (^fininshcapture)(UIImage *image);
  是否自定义加页面
  */
 @property (nonatomic, assign) BOOL isCustomPush;
+
 @property (nonatomic, copy) void (^customCallBlock)(id obj);
+/**
+ 单选切换风格 0 一多选为准 1 单选切换 不弹出 最多选一个
+ */
+@property (nonatomic, assign) NSInteger numOneSeletedStyle;
 /// Default is NO / 默认为NO，为YES时可以多选视频/gif/图片，和照片共享最大可选张数maxImagesCount的限制
 @property (nonatomic, assign) BOOL allowPickingMultipleVideo;
 
